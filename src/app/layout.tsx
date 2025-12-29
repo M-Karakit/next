@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Open_Sans } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar/navbar";
-import { navbarData } from "./Data/Navbar/NavbarData";
 import localFont from 'next/font/local'
-import Footer from "./components/Footer/Footer";
-import { footerData } from "./Data/FooterData/FooterData";
+import ClientLayout from "./components/ClientLayout/ClientLayout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,11 +39,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${openSans.variable} ${podcast.variable} antialiased relative min-h-screen`}
       >
-        <header className="absolute top-0 left-0 w-full z-10">
-           <Navbar navProps={navbarData} />
-        </header>
-        {children}
-        <Footer footerProps={footerData.footerProps}/>
+        <ClientLayout>
+          {children}
+        </ClientLayout>
       </body>
     </html>
   );

@@ -11,7 +11,7 @@ const CompanySection = ({companyProps}: CompanySectionProps) => {
         <div className="text-center lg:text-start max-w-125 lg:max-w-90 xl:max-w-137.5 2xl:max-w-175">
             <div className="mb-4 lg:mb-2 xl:mb-3.5 2xl:mb-8">
                 <p className="text-xs xl:text-sm 2xl:text-base font-semibold leading-none text-black opacity-60 mb-1.5">{companyProps.text}</p>
-                <h1 className="text-xl xl:text-2xl 2xl:text-[32px] font-extrabold text-black leading-none">{companyProps.title}</h1>
+                <h1 className="text-xl xl:text-2xl 2xl:text-[32px] font-extrabold text-black">{companyProps.title}</h1>
             </div>
             <p className="xl:text-base 2xl:text-lg font-normal xl:leading-6 2xl:leading-8 text-black xl:mb-4 2xl:mb-8">{companyProps.description}</p>
             <div className="flex items-center justify-center lg:justify-start gap-5 xl:gap-6.25 2xl:gap-12.5">

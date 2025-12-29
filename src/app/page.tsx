@@ -14,6 +14,8 @@ import MostPopularSection from "./components/MostPopularSection/MostPopularSecti
 import { HeaderTitle } from "./Data/MostPopularData/MostPopularData";
 import CustomerSaysSection from "./components/CustomerSaysSection/CustomerSaysSection";
 import { title } from "./Data/CustomerSaysData/CustomerSaysData";
+import BookBikeSection from "./components/BookBikeSection/BookBikeSection";
+import { bookData } from "./Data/BookBikeData/BookBikeData";
 
 export default function Home() {
   return (
@@ -35,6 +37,7 @@ export default function Home() {
       <CompanySection companyProps={CompanyData} />
       <SpecialOfferSection specialOfferProps={SpecialOfferData} />
       <ServicesSection serviceProps={ServiceData} />
+      <BookBikeSection bookBikeProps={bookData.bookBikeProps} />
       <MostPopularSection sectionHeader={HeaderTitle.sectionHeader} />
       <CustomerSaysSection sectionHeader={title.sectionHeader} />
     </>
